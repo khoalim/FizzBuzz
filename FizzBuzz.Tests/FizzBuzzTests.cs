@@ -38,6 +38,56 @@ namespace FizzBuzz.Tests
 
         }
 
+        [Fact]
+        public void Get_Returns_Fizz_for_6()
+        {
+            var fizzBuzz = new FizzBuzz();
 
+            var result = fizzBuzz.Get(6);
+
+            Assert.Equal("Fizz", result);
+
+
+        }
+
+        [Fact]
+        public void Get_Returns_Buzz_for_5()
+        {
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(5);
+
+            Assert.Equal("Buzz", result);
+        }
+
+        [Fact]
+        public void Get_Returns_Buzz_for_10()
+        {
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(10);
+
+            Assert.Equal("Buzz", result);
+        }
+
+        [Fact]
+        public void Get_Returns_FizzBuzz_for_15()
+        {
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(15);
+
+            Assert.Equal("FizzBuzz", result);
+        }
+
+        [Fact]
+        public void Get_Returns_FizzBuzz_for_30()
+        {
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(30);
+
+            Assert.Equal("FizzBuzz", result);
+        }
     }
 }
