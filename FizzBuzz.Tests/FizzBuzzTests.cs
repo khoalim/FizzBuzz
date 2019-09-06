@@ -3,11 +3,16 @@ using Xunit;
 
 namespace FizzBuzz.Tests
 {
-    public class UnitTest1
+    public class FizzBuzzTests
     {
         [Fact]
-        public void Test1()
+        public void Get_Returns_1_for_1()
         {
+            var fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.Get(1);
+
+            Assert.Equal("1", result);
 
         }
     }
